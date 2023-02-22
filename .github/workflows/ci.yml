@@ -56,7 +56,6 @@ jobs:
       - run: 'pnpm build'
       - name: 'Change TS to ${{ matrix.typescript-scenario }}'
         run: 'pnpm add --save-dev ${{ matrix.typescript-scenario}}'
-        working-directory: ./testing/ember-app
       - name: 'Type checking'
 
         run: |
@@ -116,7 +115,6 @@ jobs:
       - uses: ./.github/actions/pnpm
       - run: 'pnpm build'
       - name: Run Tests
-        working-directory: ./testing/ember-app
         run: >-
           node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
           --skip-cleanup
