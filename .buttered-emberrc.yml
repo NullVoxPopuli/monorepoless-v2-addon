@@ -1,0 +1,12 @@
+addon: true
+# Always has:
+# - releases
+# - beta 
+# - canary
+ember-try:
+  # Most recent 3 LTS releases
+  lts: 3
+  # adds embroider-strict
+  # - + release 
+  # - + most recent LTS
+  embroider: true

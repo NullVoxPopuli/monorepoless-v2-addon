@@ -21,7 +21,8 @@
     "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
     "lint:js:fix": "eslint . --fix",
     "start": "rollup --config --watch",
-    "test": "node ../buttered-ember/src/bin.js test --addon",
+    "test": "node ../buttered-ember/src/bin.js test",
+    "try": "node ../buttered-ember/src/bin.js try:one",
     "prepack": "pnpm run build",
     "prepare": "pnpm run build"
   },
